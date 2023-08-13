@@ -6,7 +6,6 @@ import { AppService } from './app.service';
 import { OrdersModule } from './orders/orders.module';
 import { GalleryModule } from './gallery/gallery.module';
 import { ImagesModule } from './images/images.module';
-import { GridFsMulterConfigService } from './grid-fs-multer-config/grid-fs-multer-config.service';
 
 const { NODE_ENV } = process.env;
 
@@ -23,6 +22,6 @@ const { NODE_ENV } = process.env;
     ImagesModule,
   ],
   controllers: [AppController],
-  providers: [AppService, GridFsMulterConfigService],
+  providers: [AppService],
 })
 export class AppModule {}
